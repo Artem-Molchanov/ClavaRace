@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.chucarro'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    testImplementation 'io.cucumber:cucumber-java:7.12.1'
+    implementation 'com.codeborne:selenide:6.18.0'
+
+
+}
+
+test {
+    useJUnitPlatform()
+}
